@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wangxia.vipmovieproject.SearchActivity">
+    <!--搜索大框-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_color"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_searchback"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="4dp">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_margin="3dp"
+                android:padding="2dp"
+                android:src="@drawable/webicon" />
+
+            <EditText
+                android:id="@+id/et_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="5dp"
+                android:hint="搜索或输入网址"
+                android:lines="1"
+                android:background="@null"
+                android:textColor="#8000"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+            <!--取消-->
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/delete"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:text="取消"
+            />
+    </LinearLayout>
+    <!--联想词列表-->
+    <ListView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="#e6e6e6"
+        android:dividerHeight="0.5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+    </ListView>
+</LinearLayout>

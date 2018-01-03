@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--搜索大框-->
+    <LinearLayout
+        android:id="@+id/ll_serch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:paddingBottom="12dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="12dp">
+
+        <LinearLayout
+            android:id="@+id/ll_home_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_searchback"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_margin="3dp"
+                android:padding="2dp"
+                android:src="@drawable/webicon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="搜索或输入网址"
+                android:textColor="#8000"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--列表-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srf_main"
+        android:layout_below="@+id/ll_serch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_mainList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#e6e6e6"
+            android:dividerHeight="1dp"
+            android:scrollbars="none">
+
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--隐藏的滑动显示选择的-->
+    <!--太急的去完成了,没有仔细思考图层,搞半天-->
+    <LinearLayout
+        android:id="@+id/ll_huadong_yinc"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/ll_serch"
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <!--水平可选择的新闻-->
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/rl_shuadongSelectTitle"-->
+            <!--android:scrollbars="none"-->
+            <!--android:padding="5dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+        <!--</android.support.v7.widget.RecyclerView>-->
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="#f4f4f4"-->
+            <!--android:layout_height="1dp"/>-->
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_agentParent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--标题及进度条-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#f4f4f4"
+        >
+        <ImageView
+            android:id="@+id/iv_agentweb_back"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:padding="12dp"
+            android:background="@drawable/tran_click_gray"
+            android:src="@drawable/h5game_back"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="26dp"
+            android:background="#e6e6e6"
+            />
+        <TextView
+            android:id="@+id/tv_agentweb_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="10dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text=""/>
+    </LinearLayout>
+</LinearLayout>

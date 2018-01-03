@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--视频加载时的缓冲布局,背景色一定要是黑色,不然背后的错误提示布局看得到-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:visibility="gone">
+
+    <ProgressBar
+        style="?android:progressBarStyleInverse"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+</LinearLayout>

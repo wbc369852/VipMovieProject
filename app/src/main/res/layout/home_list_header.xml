@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <!--横向列表布局-->
+    <GridView
+        android:id="@+id/gv_webVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F4F4"
+        android:gravity="center"
+        android:numColumns="6"
+        android:paddingTop="5dp"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--当加载到视频播放时显示原生播放器-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/fl_webpro"
+    android:background="#000"
+    >
+
+    <com.boredream.bdvideoplayer.BDVideoView
+        android:id="@+id/bd_vedioView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:background="#888">
+
+    </com.boredream.bdvideoplayer.BDVideoView>
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:id="@+id/video"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+</FrameLayout>

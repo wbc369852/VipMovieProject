@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/VipMovieProject.iml" filepath="$PROJECT_DIR$/VipMovieProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alipaydemo/alipaydemo.iml" filepath="$PROJECT_DIR$/alipaydemo/alipaydemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bdvideoplayer/bdvideoplayer.iml" filepath="$PROJECT_DIR$/bdvideoplayer/bdvideoplayer.iml" />
+    </modules>
+  </component>
+</project>
