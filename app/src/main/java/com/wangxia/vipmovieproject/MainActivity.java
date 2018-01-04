@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
         initdata();
         //修改了注释
         //我是branch2
+        String ndw = "我是分支2";
     }
 
     private void initdata() {
