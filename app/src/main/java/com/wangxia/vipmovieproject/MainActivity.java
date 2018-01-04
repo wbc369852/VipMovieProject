@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         initlistener();
         initdata();
         //修改了注释
-        //haha,我是wbc_branch分支 grtewfee feefefe
+        //我是branch2
     }
 
     private void initdata() {
